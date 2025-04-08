@@ -7,7 +7,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load model and vectorizer
-model = joblib.load("logreg_model.pkl")
+vectorizer = joblib.load("vectorizer_v3.joblib")
 vectorizer = joblib.load("logreg_vectorizer.pkl")
 
 # Page Setup
