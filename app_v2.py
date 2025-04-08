@@ -7,8 +7,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load model and vectorizer
+model = joblib.load("fake_news_model_v3.joblib")
 vectorizer = joblib.load("vectorizer_v3.joblib")
-vectorizer = joblib.load("logreg_vectorizer.pkl")
+
 
 # Page Setup
 st.set_page_config(page_title="Bluffo - Fake News Detection", layout="wide")
