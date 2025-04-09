@@ -22,7 +22,7 @@ st.markdown("""
         .title {
             font-size: 48px;
             font-weight: 900;
-            color: #22c55e;
+            color: #f1c40f;
         }
         .subtitle {
             font-size: 22px;
