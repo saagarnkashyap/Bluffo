@@ -34,7 +34,7 @@ st.markdown("""
             color: white;
         }
         .cap-button {
-            background-color: #f43f5e;
+            background-color: white;
             color: white;
             font-weight: bold;
             padding: 0.5em 1em;
