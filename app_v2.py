@@ -108,7 +108,7 @@ if os.path.exists("precision_recall_v3.png"):
 
 # ===== Classification Report =====
 if os.path.exists("classification_metrics_v3.json"):
-    st.markdown("###Classification Metrics")
+    st.markdown("**Classification Metrics**")
     with open("classification_metrics_v3.json", "r") as f:
         report_data = json.load(f)
         df_report = pd.DataFrame(report_data).transpose().round(2)
