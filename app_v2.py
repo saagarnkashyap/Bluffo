@@ -13,39 +13,43 @@ vectorizer = joblib.load("logreg_vectorizer.pkl")
 st.set_page_config(page_title="Bluffo: Is This Cap?", layout="wide")
 
 # Custom Styles
-st.markdown("""
+st.markdown(
+    """
     <style>
-        .main {
-            background-color: #0f172a;
-            color: white;
-        }
-        .title {
-            font-size: 48px;
-            font-weight: 900;
-            color: #f1c40f;
-        }
-        .subtitle {
-            font-size: 22px;
-            margin-top: 30px;
-            color: #f5f5f5;
-        }
-        .stTextArea label {
-            font-weight: bold;
-            color: white;
-        }
-        .cap-button {
-            background-color: white;
-            color: white;
-            font-weight: bold;
-            padding: 0.5em 1em;
-            border-radius: 10px;
-            cursor: pointer;
-        }
+    body {
+        background-color: #000000;
+        color: white;
+    }
+    .stApp {
+        background-color: #000000;
+        color: white;
+    }
+    h1, h2, h3, h4, h5, h6, p {
+        color: white;
+    }
+    .css-18e3th9 {
+        background-color: #000000 !important;
+    }
+    .st-bb {
+        color: white !important;
+    }
+    .st-bb:hover {
+        color: #ff4b4b !important;
+    }
     </style>
-""", unsafe_allow_html=True)
+    """,
+    unsafe_allow_html=True
+)
 
 # Title
-st.markdown('<div class="title">Bluffo - Is This Cap?</div>', unsafe_allow_html=True)
+st.markdown(
+    """
+    <h1 style='text-align: center; color: #ff4b4b; text-shadow: 3px 3px #000000; font-family: Comic Sans MS, cursive;'>
+        Bluffo - Is This Cap?
+    </h1>
+    """,
+    unsafe_allow_html=True
+)
 
 # ===== CSV Upload Section at Top =====
 st.markdown('<div class="subtitle">📂 Bulk Headline Upload</div>', unsafe_allow_html=True)
