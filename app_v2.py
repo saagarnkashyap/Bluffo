@@ -13,33 +13,66 @@ vectorizer = joblib.load("logreg_vectorizer.pkl")
 st.set_page_config(page_title="Bluffo: Is This Cap?", layout="wide")
 
 # Custom Styles
-st.markdown(
-    """
+st.markdown("""
     <style>
-    body {
+    /* Set dark background for the whole page */
+    .main {
         background-color: #000000;
         color: white;
     }
-    .stApp {
-        background-color: #000000;
+
+    /* Style sidebar */
+    .css-1d391kg, .css-1lcbmhc {
+        background-color: #111111 !important;
+    }
+
+    /* Style buttons */
+    .stButton>button {
+        background-color: #333333;
         color: white;
+        border: 1px solid #555;
+        font-weight: bold;
     }
-    h1, h2, h3, h4, h5, h6, p {
+
+    .stButton>button:hover {
+        background-color: #444444;
+        color: #00FF99;
+    }
+
+    /* Text input boxes and file uploader */
+    .stTextInput>div>div>input,
+    .stFileUploader>div,
+    .stTextArea>div>textarea {
+        background-color: #1e1e1e;
         color: white;
+        border: 1px solid #555555;
     }
-    .css-18e3th9 {
-        background-color: #000000 !important;
+
+    /* Upload file box specific styling */
+    .stFileUploader {
+        background-color: #1e1e1e;
+        border: 1px solid #444;
+        padding: 10px;
+        border-radius: 5px;
     }
-    .st-bb {
-        color: white !important;
+
+    /* Headings white and bold */
+    h1, h2, h3, h4 {
+        color: white;
+        font-weight: bold;
     }
-    .st-bb:hover {
-        color: #ff4b4b !important;
+
+    /* Meme style main heading */
+    .bluffo-title {
+        font-size: 60px;
+        font-weight: 900;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px #ff0000;
+        margin-bottom: 40px;
     }
     </style>
-    """,
-    unsafe_allow_html=True
-)
+""", unsafe_allow_html=True)
 
 # Title
 st.markdown(
